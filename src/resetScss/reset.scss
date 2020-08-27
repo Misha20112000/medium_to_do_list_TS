@@ -1,0 +1,60 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  color: #f4ffc0;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  //font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  color: inherit;
+  display: inline-block;
+  font-size: inherit;
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: inherit;
+  display: inline-block;
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: inherit;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 510px;
+  margin: 0 auto;
+}

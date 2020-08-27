@@ -1,0 +1,114 @@
+.task {
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  transition: 0.1s linear;
+  background: linear-gradient(360deg, rgba(250, 188, 188, 0.3) 0%, rgba(236, 121, 178, 0) 104.41%), rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 8px 10px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  input {
+    width: 100%;
+    font-family: inherit;
+    letter-spacing: normal;
+    margin-bottom: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .text {
+    cursor: default;
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      background: #fff;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      top: 35px;
+    }
+
+    button {
+      padding: 2px 4px;
+      cursor: pointer;
+      margin: 0 5px;
+      transition: 0.1s linear;
+      border: 2px solid #fff;
+      border-radius: 3px;
+    }
+
+    .edit {
+      &:hover {
+        background: #e1e1e1;
+        color: #000;
+      }
+    }
+    
+    .done {
+      &:hover {
+        background: green;
+      }
+    }
+
+    .delete {
+      &:hover {
+        background: darkred;
+      }
+    }
+  }
+}
+
+.doneTask {
+  background: rgba(0, 0, 0, 0.4);
+  color: grey;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: 'Completed';
+    font-size: 14px;
+    position: absolute;
+    color: #fff;
+    width: 110px;
+    text-align: center;
+    background: green;
+    right: -23px;
+    top: 22px;
+    transform: rotate(45deg);
+  }
+
+  .text {
+    text-decoration: line-through;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    .edit {
+      display: none;
+    }
+
+    .done {
+      display: none;
+    }
+
+    .delete {
+      text-decoration: dotted;
+      color: #fff;
+    }
+  }
+}
