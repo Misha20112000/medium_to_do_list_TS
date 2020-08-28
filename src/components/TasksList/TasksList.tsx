@@ -27,8 +27,9 @@ export const TasksList: React.FC<IPropsTypes> = ({tasks, performTask, deleteTask
                 marginTop: '10px',
                 borderRadius: '3px',
                 cursor: 'default',
+                color: 'grey'
             }
-            }>У вас немає завдань</div>}
+            }>You have no tasks</div>}
         </div>
     );
 };

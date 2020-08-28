@@ -14,6 +14,9 @@
     font-family: inherit;
     letter-spacing: normal;
     margin-bottom: 30px;
+    padding: 5px 3px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
   }
 
   &:last-child {
@@ -23,6 +26,7 @@
   .text {
     cursor: default;
     margin-bottom: 30px;
+    padding: 5px 3px;
   }
 
   .buttons {

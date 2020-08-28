@@ -15,10 +15,14 @@ export const Task: React.FC<IPropsTypes> = ({task, performTask, deleteTask, edit
     const [inputValue, setInputValue] = useState(task.text);
 
     const perform = () => {
+        if(task.editMode) {
+            editModeHandler(task.id, inputValue);
+        }
         performTask(task.id);
     };
 
     const deleteTask2 = () => {
+        editModeHandler(task.id, inputValue);
         deleteTask(task.id);
     };
 
